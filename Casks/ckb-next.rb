@@ -1,11 +1,13 @@
 cask 'ckb-next' do
-  version '0.4.1'
-  sha256 '6f56219c4cb003e1b3d3559c7124368dc4ed8ce6d46eed558d90a5c25b5f6318'
+  version '0.4.2'
+  sha256 '2cb5cde9ed4514e85ec492af84c60692fe2f91495d788678a723396b083bbb52'
 
   url "https://github.com/ckb-next/ckb-next/releases/download/v#{version}/ckb-next_v#{version}.dmg"
   appcast 'https://github.com/ckb-next/ckb-next/releases.atom'
   name 'ckb-next'
   homepage 'https://github.com/ckb-next/ckb-next'
+
+  depends_on macos: '>= :sierra'
 
   pkg 'ckb-next.mpkg'
 

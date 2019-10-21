@@ -1,6 +1,6 @@
 cask 'xamarin-profiler' do
-  version '1.6.10-15'
-  sha256 '7f9bb7f22e046549887877715b83d3df89ccce82e8304c6c701103ae0bd64f4c'
+  version '1.6.12-26'
+  sha256 '8968ee2cd555efcd9058ee313683d09c731aec5bf6c0e01b65020fe4917b0c87'
 
   url "https://dl.xamarin.com/profiler/profiler-mac-#{version}.pkg"
   appcast 'https://developer.xamarin.com/releases/profiler/'

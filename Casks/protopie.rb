@@ -1,6 +1,6 @@
 cask 'protopie' do
-  version '4.0.3'
-  sha256 '8995a89410ab38dcdd5ea52008a26063b8e6bf766933d67c88e03b2bd955b140'
+  version '4.1.0'
+  sha256 '2eee2e56a9b6574a7939dacea175c62e592ae972fa10d5feb143a13092cd9276'
 
   url "http://release.protopie.io/ProtoPie-#{version}.dmg"
   appcast 'https://www.protopie.io/support/updates/'

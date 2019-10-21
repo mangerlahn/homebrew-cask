@@ -1,10 +1,10 @@
 cask 'cacher' do
-  version '2.16.3'
-  sha256 '9aaa8e2bab35e1962f88a991cf2032c74108e4cc4263b64e72b46970fb24dbe5'
+  version '2.21.4'
+  sha256 '914b54cc769c13cc52c92fe2d05773d9b55d61bbd4b48aa9822754a0ffb36a22'
 
   # cacher-download.nyc3.digitaloceanspaces.com was verified as official when first introduced to the cask
   url "https://cacher-download.nyc3.digitaloceanspaces.com/Cacher-#{version}-mac.zip"
-  appcast 'https://cacher-download.nyc3.digitaloceanspaces.com/latest.yml'
+  appcast 'https://cacher-download.nyc3.digitaloceanspaces.com/latest-mac.yml'
   name 'Cacher'
   homepage 'https://www.cacher.io/'
 

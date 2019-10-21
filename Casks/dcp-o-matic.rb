@@ -1,6 +1,6 @@
 cask 'dcp-o-matic' do
-  version '2.14.8'
-  sha256 '0dbfa1a618f3ed8cfdbc0408c6b68bab413f58073d47ea4b20dcdd8075644be4'
+  version '2.14.11'
+  sha256 '80291e2f958b285f322a8e9a2e928c4e3a08ff4f6c879fcce76ea7d0d3c9a71b'
 
   url "https://dcpomatic.com/dl.php?id=osx-main&version=#{version}"
   appcast 'https://dcpomatic.com/download'

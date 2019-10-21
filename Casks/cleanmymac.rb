@@ -1,6 +1,6 @@
 cask 'cleanmymac' do
-  version '4.4.6,1565872200'
-  sha256 '8b0e607e5740585aba6009ee3b4702dbab9fc5cf3a4059dc551d41858b4f8e3a'
+  version '4.5.0,1570619032'
+  sha256 '0de23ed8e86ae731a9ddc594f9d7b8a5eea856a3ac2670d0f87c11c5e18b06cf'
 
   # devmate.com/com.macpaw.CleanMyMac was verified as official when first introduced to the cask
   url "https://dl.devmate.com/com.macpaw.CleanMyMac#{version.major}/#{version.major_minor_patch}/#{version.after_comma}/CleanMyMacX-#{version.major_minor_patch}.zip"
@@ -32,15 +32,20 @@ cask 'cleanmymac' do
                "~/Library/Application Support/CleanMyMac #{version.major}",
                "~/Library/Application Support/CleanMyMac #{version.major} Menu",
                '~/Library/Application Support/CleanMyMac X',
+               '~/Library/Application Support/CleanMyMac X Menu',
                "~/Library/Caches/CleanMyMac #{version.major}",
                "~/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.macpaw.CleanMyMac#{version.major}.help*",
                "~/Library/Caches/com.macpaw.CleanMyMac#{version.major}",
+               "~/Library/Caches/com.macpaw.CleanMyMac#{version.major}.HealthMonitor",
                "~/Library/Caches/com.macpaw.CleanMyMac#{version.major}.KnowledgeBase",
                "~/Library/Caches/com.macpaw.CleanMyMac#{version.major}.Menu",
                "~/Library/Caches/com.macpaw.CleanMyMac#{version.major}.Scheduler",
+               "~/Library/LaunchAgents/com.macpaw.CleanMyMac#{version.major}.HealthMonitor.plist",
                "~/Library/Logs/CleanMyMac #{version.major}.log",
+               '~/Library/Logs/CleanMyMac X Menu/HealthMonitor',
                "~/Library/Logs/com.macpaw.CleanMyMac#{version.major}",
                "~/Library/Preferences/com.macpaw.CleanMyMac-#{version.major}-Helper.plist",
+               "~/Library/Preferences/com.macpaw.CleanMyMac#{version.major}.HealthMonitor.plist",
                "~/Library/Preferences/com.macpaw.CleanMyMac#{version.major}.KnowledgeBase.plist",
                "~/Library/Preferences/com.macpaw.cleanmymac#{version.major}.menu.plist",
                "~/Library/Preferences/com.macpaw.CleanMyMac#{version.major}.Scheduler.plist",

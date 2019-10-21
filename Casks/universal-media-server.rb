@@ -1,10 +1,10 @@
 cask 'universal-media-server' do
-  version '8.2.0'
-  sha256 'c0a9ed37a3ca9621b78a9470241136446e0b62a8bc1e5c7b85f5e2c1aa21d98d'
+  version '9.0.1'
+  sha256 '61a087061bc43c44a70e2eb43025b018dfca2e9d0277e5824dd514eede87e20c'
 
-  # sourceforge.net/unimediaserver was verified as official when first introduced to the cask
-  url "https://downloads.sourceforge.net/unimediaserver/Official%20Releases/OS%20X/UMS-#{version}.dmg"
-  appcast 'https://sourceforge.net/projects/unimediaserver/rss?path=/Official%20Releases'
+  # github.com/UniversalMediaServer/UniversalMediaServer was verified as official when first introduced to the cask
+  url "https://github.com/UniversalMediaServer/UniversalMediaServer/releases/download/#{version}/UMS-#{version}.dmg"
+  appcast 'https://github.com/UniversalMediaServer/UniversalMediaServer/releases.atom'
   name 'Universal Media Server'
   homepage 'https://www.universalmediaserver.com/'
 

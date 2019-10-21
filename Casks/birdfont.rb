@@ -3,8 +3,8 @@ cask 'birdfont' do
     version '2.19.4'
     sha256 '013d9c42c2252b57079453bd27e4c18dbbc09eda55563ff1516fd079c0499f76'
   else
-    version '3.29.7'
-    sha256 '7faedd49e63284a36fe9109604e85cb3ed096f4e7d8bb2c87a02f90a0cf169c9'
+    version '3.31.0'
+    sha256 '0879898b3c248167cc9f4c8ede47a576130adb4eb2a7e3231f617b1e3dc091e2'
   end
 
   url "https://birdfont.org/download/birdfont-#{version}-free.dmg"

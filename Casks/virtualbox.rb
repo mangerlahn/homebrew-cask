@@ -1,6 +1,6 @@
 cask 'virtualbox' do
-  version '6.0.10,132072'
-  sha256 'fea522ef619cd0060e20bff30bb932c3f018eae8165716e19699beadc00446b7'
+  version '6.0.14,133895'
+  sha256 'ea3ebf2457908495128178f9b6676a77b120fa7878fd626d2baf0a8c45921370'
 
   url "https://download.virtualbox.org/virtualbox/#{version.before_comma}/VirtualBox-#{version.before_comma}-#{version.after_comma}-OSX.dmg"
   appcast 'https://download.virtualbox.org/virtualbox/LATEST.TXT'
@@ -10,6 +10,12 @@ cask 'virtualbox' do
   conflicts_with cask: 'virtualbox-beta'
 
   pkg 'VirtualBox.pkg'
+
+  postflight do
+    # If VirtualBox is installed before `/usr/local/lib/pkgconfig` is created by Homebrew, it creates it itself with incorrect permissions that break other packages
+    # See https://github.com/Homebrew/homebrew-cask/issues/68730#issuecomment-534363026
+    set_ownership '/usr/local/lib/pkgconfig'
+  end
 
   uninstall script:  {
                        executable: 'VirtualBox_Uninstall.tool',

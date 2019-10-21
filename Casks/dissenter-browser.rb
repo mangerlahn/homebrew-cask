@@ -1,8 +1,9 @@
 cask 'dissenter-browser' do
-  version '0.66.99'
-  sha256 '1192c8a0fae4621dd26fd7fbf65ed32ea07617c112f9ec65395b7ec3e67ff940'
+  version '0.69.135,5d3f93a29dd49a5b1d9fc27f:5da5f347bcf95235c499fb7c'
+  sha256 '854ffbd5c16e16836ec8bb210d157c38f4522c5cfc78c2f025f4db9433bac618'
 
-  url "https://dissenter.com/dist/browser/#{version}/dissenter-browser-v#{version}.dmg"
+  # apps.gab.com was verified as official when first introduced to the cask
+  url "https://apps.gab.com/application/#{version.after_comma.before_colon}/resource/#{version.after_colon}/content"
   appcast 'https://dissenter.com/'
   name 'Dissenter'
   homepage 'https://dissenter.com/'
